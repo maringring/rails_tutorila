@@ -1,0 +1,22 @@
+<div class="container">
+<h1>LOGIN</h1>
+    <div>
+        <%= form_with(url: sessions_create_path, method: 'post') do |f| %>
+            
+            <%= f.label :email %>
+            <div>
+            <%= f.email_field :email, class:"field_length" %>
+            </div>
+            
+            <%= f.label :password %>
+            <div>
+            <%= f.password_field :password, class:"field_length" %>
+            </div>
+
+            <div>
+            <%= link_to "SIGN UP", new_user_path, method: :post %><br>
+            <%= f.submit "LOGIN", class:"btn btn-outline-info" %>
+            </div>
+        <% end %>
+    </div>
+</div>

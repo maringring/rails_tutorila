@@ -1,0 +1,35 @@
+<div class="container">
+<h1>Sign up</h1>
+
+  <div>
+    <div>
+      <%= form_with(model: @user) do |f| %>
+        <%= f.label :name %>
+        <div>
+        <%= f.text_field :name, class:"field_length" %>
+        </div>
+
+        <%= f.label :email %>
+        <div>
+        <%= f.email_field :email, class:"field_length" %>
+        </div>
+
+        <%= f.label :password %>
+        <div>
+        <%= f.password_field :password, class:"field_length" %>
+        </div>
+
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <div>
+        <%= f.password_field :password_confirmation, class:"field_length" %>
+        </div>
+
+        <br>
+        <div>
+        <%= f.submit "Create my account", class:"btn btn-outline-info"%>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+</div>

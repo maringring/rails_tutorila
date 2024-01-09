@@ -1,0 +1,19 @@
+body {
+    font-family: 'Zen Maru Gothic', serif;
+  }
+
+.btn {
+    width: 220px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh; /* 최소 높이를 화면 높이와 같도록 설정하여 세로 중앙 정렬 */
+}
+
+.field_length {
+  width: 220px;
+}
